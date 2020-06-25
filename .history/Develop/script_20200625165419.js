@@ -6,7 +6,9 @@ $(document).ready(() => {
     var date = $("#currentDay");
     date.text(now);
 
-    // Iterate through input elements and set the color based on event time
+    /**
+     * 
+     */
     var hour = moment().format("HH");
     var currentHour = Number.parseInt(hour);
     $(".event").each(function () {

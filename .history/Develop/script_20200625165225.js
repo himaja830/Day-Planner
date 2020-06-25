@@ -6,12 +6,11 @@ $(document).ready(() => {
     var date = $("#currentDay");
     date.text(now);
 
-    // Iterate through input elements and set the color based on event time
+    //get input fields to alter their color relative to time.bg-gray.
     var hour = moment().format("HH");
     var currentHour = Number.parseInt(hour);
     $(".event").each(function () {
-        var eventHour = Number.parseInt(this.getAttribute('data-time'));
-        console.log(eventHour);
+        var eventHour = Number.parseInt(this['data-time');
         if (eventHour === currentHour) {
             $(this).addClass('present');
         } else if (eventHour < currentHour) {
@@ -21,12 +20,19 @@ $(document).ready(() => {
         }
     });
 
+
+
     $(".btn").on("click", function (event) {
         event.preventDefault();
         var inputText = event.target;
         var input = $(this).attr("data-time");
         var inputText = $(`#${input}`).val();
         localStorage.setItem("inputText", $(`#${input}`).val());
-    });
+    })
+
+
+
+
+
 
 });
