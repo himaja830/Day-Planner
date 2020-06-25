@@ -1,7 +1,5 @@
 $(document).ready(() => {
-    // Set empty array in local storage to store events data
-   localStorage.setItem('events',JSON.stringify([]));
-   
+    localStorage.setItem("userData", []);
 
     //Date format have been set and displayed at the top of page.
     var now = moment().format("MM/DD/YYYY");
@@ -23,24 +21,16 @@ $(document).ready(() => {
         }
     });
 
-    // Connecting input and save buttons to each other.
     $(".btn").on("click", function (event) {
         event.preventDefault();
         var inputText = event.target;
         var input = $(this).attr("data-time");
         var inputText = $(`#${input}`).val();
     });
+    function setLocalStorage(){
 
-    // get events from localstorage and set the data and push it to localstorage
-    function setLocalStorage(index, data) {
-       var events = getLocalStorage();
-       events[index] = data;
-       localStorage.setItem("events", JSON.stringify(events));
     }
-
-    // get the events from localstorage
     function getLocalStorage(){
-      var events = localStorage.getItem('events');
-      return JSON.parse(events);
+        
     }
 });

@@ -31,16 +31,12 @@ $(document).ready(() => {
         var inputText = $(`#${input}`).val();
     });
 
-    // get events from localstorage and set the data and push it to localstorage
+    // Storing the input events in LS
     function setLocalStorage(index, data) {
-       var events = getLocalStorage();
-       events[index] = data;
-       localStorage.setItem("events", JSON.stringify(events));
+        
+          
     }
-
-    // get the events from localstorage
     function getLocalStorage(){
-      var events = localStorage.getItem('events');
-      return JSON.parse(events);
+      localStorage.getItem('events')
     }
 });

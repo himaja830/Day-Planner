@@ -1,7 +1,6 @@
 $(document).ready(() => {
     // Set empty array in local storage to store events data
-   localStorage.setItem('events',JSON.stringify([]));
-   
+  var eventArr = localstorage.setItem([]);
 
     //Date format have been set and displayed at the top of page.
     var now = moment().format("MM/DD/YYYY");
@@ -31,16 +30,11 @@ $(document).ready(() => {
         var inputText = $(`#${input}`).val();
     });
 
-    // get events from localstorage and set the data and push it to localstorage
-    function setLocalStorage(index, data) {
-       var events = getLocalStorage();
-       events[index] = data;
-       localStorage.setItem("events", JSON.stringify(events));
+    // Storing the input events in LS
+    function setLocalStorage(){
+          
     }
-
-    // get the events from localstorage
     function getLocalStorage(){
-      var events = localStorage.getItem('events');
-      return JSON.parse(events);
+
     }
 });
