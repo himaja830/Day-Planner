@@ -22,8 +22,8 @@ $(document).ready(() => {
     $(".btn").on("click", function (event) {
         event.preventDefault();
         var hour = this.getAttribute('data-time');
-        var data = $('#event'+hour).val();
-        var index = $('#event'+hour).attr('data-index');
+        var data = $(inputElem).val();
+        var index = $(inputElem).attr('data-index');
         setLocalStorage(index, data);
     });
 

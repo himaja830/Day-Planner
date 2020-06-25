@@ -21,9 +21,12 @@ $(document).ready(() => {
     // Connecting input and save buttons to each other.
     $(".btn").on("click", function (event) {
         event.preventDefault();
-        var hour = this.getAttribute('data-time');
-        var data = $('#event'+hour).val();
-        var index = $('#event'+hour).attr('data-index');
+        var inputElem = $(this).closest('.input-group').find('.event');
+        console.log(inputElem);
+        var data = $(inputElem).val();
+        console.log(data);
+        var index = $(inputElem).attr('data-index');
+        console.log(index);
         setLocalStorage(index, data);
     });
 
