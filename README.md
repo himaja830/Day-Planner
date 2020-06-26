@@ -25,7 +25,7 @@ This planner very easy to use.When you open the page you can see present day dat
    Screenshots of application with different sizes:
 
 Desktop:
-![](images/desktop.png)
+![desktop](images/desktop.png)
    
 Tablet:
 ![](images/ipad.png)
