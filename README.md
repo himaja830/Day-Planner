@@ -25,13 +25,13 @@ This planner very easy to use.When you open the page you can see present day dat
    Screenshots of application with different sizes:
 
 Desktop:
-![desktop](https://github.com/himaja830/Day-Planner/blob/master/Develop/images/desktop.png)
+![desktop](https://github.com/himaja830/Day-Planner/blob/master/assets/images/desktop.png)
    
 Tablet:
-![Tablet](https://github.com/himaja830/Day-Planner/blob/master/Develop/images/Ipad.png)
+![Tablet](https://github.com/himaja830/Day-Planner/blob/master/assets/images/Ipad.png)
 
 Mobile:
-![Mobile](https://github.com/himaja830/Day-Planner/blob/master/Develop/images/mobile.png)
+![Mobile](https://github.com/himaja830/Day-Planner/blob/master/assets/images/mobile.png)
 
 
 
