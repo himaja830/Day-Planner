@@ -1,4 +1,7 @@
 $(document).ready(() => {
+
+    displayEvents();
+
     //Date format have been set and displayed at the top of page.
     var now = moment().format("MM/DD/YYYY");
     var date = $("#currentDay");
@@ -41,5 +44,14 @@ $(document).ready(() => {
     function getLocalStorage(){
       var events = localStorage.getItem('events');
       return JSON.parse(events);
+    }
+    
+    //get events from locl storage and setting then to display on input fields
+    function displayEvents(){
+        var  events = getLocalStorage();
+        for(var index in events){
+            var i = Number.parseInt(index) + 9;
+            $("#event" + i).val(events[index]);
+        }
     }
 });
